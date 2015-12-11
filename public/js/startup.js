@@ -14,14 +14,6 @@ $(document).ready(function() {
             setTimeout(
               function() {
                 $('.pop-up, .pop-up-overlay').hide();
-
-                $('#circle').circleProgress({
-                    value: 0.75,
-                    size: 80,
-                    fill: {
-                        gradient: ["red", "orange"]
-                    }
-                });
                 }, 3000
             );
             
