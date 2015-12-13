@@ -3,7 +3,7 @@ $(document).ready(function() {
     count = 0 ;
     setTimeout(function() {
         $('.pop-up,.pop-up-overlay').addClass('visible'); 
-    }, 500);
+    }, 2000);
 
     $('.each-img').click(function() {
         $(this).toggleClass('active-img');
@@ -36,7 +36,7 @@ $(document).ready(function() {
         speed: 200,
         slidesToShow: 8,
         slidesToScroll: 1,
-        swipeToSlide:1,
+        swipeToSlide:true,
         variableWidth: true
         //,
         // responsive: [{
