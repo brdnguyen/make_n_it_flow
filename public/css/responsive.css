@@ -1,4 +1,10 @@
 /* Slider */
+#circle{
+  left:50%;
+  float:right;
+  width:200px;
+}
+
 .message{
   display:none;
   clear:both;
@@ -37,7 +43,7 @@
 }
 
 .pop-up.visible {
-  top: 150px;
+  top: 100px;
   right: 150px;
   bottom: 100px;
   left: 150px;  

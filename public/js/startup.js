@@ -7,14 +7,23 @@ $(document).ready(function() {
 
     $('.each-img').click(function() {
         $(this).toggleClass('active-img');
-        count = count + 1;
-        if (count == 2) {
+        if ($(this).hasClass('active-img')) 
+            count = count + 1;
+        
+        if (count == 3) {
             // print 'personalising for XXXXX'
             $('.message').show();
+            $('#circle').circleProgress({
+                value: 0.8,
+                size: 80,
+                fill: {
+                    gradient: ["red", "orange"]
+                }
+            });
             setTimeout(
               function() {
                 $('.pop-up, .pop-up-overlay').hide();
-                }, 3000
+                }, 4000
             );
             
         }
