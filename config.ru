@@ -1,5 +1,5 @@
 use Rack::Static,
-  :urls => ["/images", "/js", "/css", "/slick", "/img", "js/jquery-circle-progress/dist/circle-progress.js"],
+  :urls => ["/images", "/js", "/css", "/slick", "/img", "js/jquery-circle-progress/dist"],
   :root => "public"
 
 run lambda { |env|
