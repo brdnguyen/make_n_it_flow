@@ -1,9 +1,10 @@
 
-$(document).ready(function() {
+$(window).load(function() {
+//$(document).ready(function() {
     count = 0 ;
     setTimeout(function() {
         $('.pop-up,.pop-up-overlay').addClass('visible'); 
-    }, 2000);
+    }, 5    000);
 
     $('.each-img').click(function() {
         $(this).toggleClass('active-img');
