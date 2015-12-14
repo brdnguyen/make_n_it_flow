@@ -40,7 +40,8 @@ $(window).load(function() {
         slidesToShow: 8,
         slidesToScroll: 1,
         swipeToSlide:true,
-        variableWidth: true
+        variableWidth: true,
+        prevArrow: false
         //,
         // responsive: [{
         //     breakpoint: 1024,
