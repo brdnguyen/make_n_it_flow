@@ -1,5 +1,4 @@
-$(window).load(function() {
-//$(document).ready(function() {
+$(document).ready(function() {
     count = 0 ;
     setTimeout(function() {
         $('.pop-up,.pop-up-overlay').addClass('visible'); 
@@ -28,7 +27,11 @@ $(window).load(function() {
             
         }
     });
+}
+);
 
+
+$(window).load(function() {
 
     $('.responsive').slick({
         // dots: true,

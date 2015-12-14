@@ -206,6 +206,11 @@
   border: none;
   outline: none;
 }
+
+.slick-prev{
+  display: None
+}
+
 .slick-prev:focus,
 .slick-next:focus {
   outline: none;
