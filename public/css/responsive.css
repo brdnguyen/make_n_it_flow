@@ -1,3 +1,8 @@
+*{
+min-height: 0;
+min-width: 0;
+} /* bug fix for firefox */
+
 /* Slider */
 #circle{
   left:50%;
