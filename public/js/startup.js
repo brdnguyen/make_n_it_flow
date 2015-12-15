@@ -9,7 +9,7 @@ $(document).ready(function() {
         if ($(this).hasClass('active-img')) 
             count = count + 1;
         
-        if (count == 3) {
+        if (count == 1) {
             // print 'personalising for XXXXX'
             $('.message').show();
             $('#circle').circleProgress({
@@ -22,7 +22,7 @@ $(document).ready(function() {
             setTimeout(
               function() {
                 $('.pop-up, .pop-up-overlay').hide();
-                }, 4000
+                }, 100
             );
             
         }
@@ -32,6 +32,16 @@ $(document).ready(function() {
 
 
 $(window).load(function() {
+    $('.carousel-img').click(function() {
+        if ($(this).hasClass('just-clicked')){
+            $(':last-child', this).remove();
+        } else {
+           $(this).append('<div class="fav"></div>');
+        }
+        $(this).toggleClass('just-clicked');
+    }
+    );
+
 
     $('.responsive').slick({
         // dots: true,

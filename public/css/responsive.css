@@ -3,6 +3,64 @@ min-height: 0;
 min-width: 0;
 } /* bug fix for firefox */
 
+.carousel-img{
+  position: relative;
+  height: 180px;
+  float:left;
+}
+
+
+.carousel-img img{
+  float:left;
+  left:0%;
+  top:0%;
+}
+
+
+.fav {
+  content: url(img/heart.png);
+  width:30px;
+  height:30px;
+  position:absolute;
+
+  top:4px;
+  right: 13px;
+}
+
+.each-img{
+  display:block;
+  float: left;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 0 16px 0 0;
+  background: #4c4c50;
+}
+
+.each-img img{
+  width:100%;
+  height:100%;
+}
+
+.each-img:last-child {
+  margin-right:0;
+}
+
+.active-img img {
+  opacity:0.1;
+}
+
+.active-img:after {
+  content: url(img/tick.svg);
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
 /* Slider */
 #circle{
   left:50%;
@@ -60,38 +118,11 @@ min-width: 0;
   float: left;
 }
 
-.each-img{
-  display:block;
-  float: left;
+.ui-icon-heart{
+  float:right;
   position: relative;
-  width: 150px;
-  height: 150px;
-  margin: 0 16px 0 0;
-  background: #4c4c50;
-}
-
-.each-img img{
-  width:100%;
-  height:100%;
-}
-
-.each-img:last-child {
-  margin-right:0;
-}
-
-.active-img img {
-  opacity:0.1;
-}
-
-.active-img:after {
-  content: url(img/tick.svg);
-  width: 36px;
-  height: 36px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-left: -30px;
-  margin-top: -30px;
+  width:10px;
+  height:10px;
 }
 
 .slick-slider {
