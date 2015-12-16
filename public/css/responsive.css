@@ -1,14 +1,64 @@
+
 *{
 min-height: 0;
 min-width: 0;
 } /* bug fix for firefox */
+
+/*.slick-prev{
+  display: None
+}
+
+.slick-prev:focus,
+.slick-next:focus {
+  outline: none;
+}
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+  opacity: 0.25;
+}
+
+.slick-prev:before, .slick-next:before {
+  font-family: "slick";
+  font-size: 20px;
+  line-height: 1;
+  color: white;
+  opacity: 0.85;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev {
+  left: -25px;
+}
+.slick-prev:before {
+  content: '\2190';
+}
+
+.slick-next {
+  right: -25px;
+}
+.slick-next:before {
+  content: '\2192';
+}*/
+
+/*---------------------- */
+
+.slick-prev {
+  content: ">";
+  color: red;
+  font-size: 30px;
+}
+.slick-next{
+  content: "<"
+  color: red;
+  font-size: 30px;
+}
 
 .carousel-img{
   position: relative;
   height: 180px;
   float:left;
 }
-
 
 .carousel-img img{
   float:left;
@@ -231,7 +281,9 @@ min-width: 0;
   font-style: normal;
 }
 /* Arrows */
-.slick-prev,
+  /*top: 10%; */
+
+/*.slick-prev,
 .slick-next {
   position: absolute;
   display: block;
@@ -242,49 +294,13 @@ min-width: 0;
   cursor: pointer;
   background: transparent;
   color: transparent;
-  /*top: 10%; */
   margin-top: -10px;
   padding: 0;
   border: none;
   outline: none;
-}
+}*/
 
-.slick-prev{
-  display: None
-}
 
-.slick-prev:focus,
-.slick-next:focus {
-  outline: none;
-}
-.slick-prev.slick-disabled:before,
-.slick-next.slick-disabled:before {
-  opacity: 0.25;
-}
-
-.slick-prev:before, .slick-next:before {
-  font-family: "slick";
-  font-size: 20px;
-  line-height: 1;
-  color: white;
-  opacity: 0.85;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.slick-prev {
-  left: -25px;
-}
-.slick-prev:before {
-  content: '\2190';
-}
-
-.slick-next {
-  right: -25px;
-}
-.slick-next:before {
-  content: '\2192';
-}
 
 /* Dots */
 .slick-slider {
@@ -434,4 +450,8 @@ h2 {
 }
 .slick-dots li.slick-active button:before {
   opacity: 0.75;
+}
+
+.slick-next:before {
+  font-size: 40;
 }
