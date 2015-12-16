@@ -46,8 +46,8 @@ $(window).load(function() {
         // dots: true,
         infinite: true,
         speed: 200,
-        slidesToShow: 8,
-        slidesToScroll: 1,
+        slidesToShow: 6,
+        slidesToScroll: 2,
         swipeToSlide:true,
         variableWidth: true,
         prevArrow: false
