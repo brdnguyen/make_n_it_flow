@@ -5,11 +5,10 @@ $(document).ready(function() {
     }, 500);
 
     $('.each-img').click(function() {
-        $(this).toggleClass('active-img');
-        if ($(this).hasClass('active-img')) 
+        if (!$(this).hasClass('active-img')) 
             count = count + 1;
-        
-        if (count == 1) {
+        $(this).addClass('active-img');
+        if (count == 3) {
             // print 'personalising for XXXXX'
             $('.message').show();
             $('#circle').circleProgress({
@@ -22,7 +21,7 @@ $(document).ready(function() {
             setTimeout(
               function() {
                 $('.pop-up, .pop-up-overlay').hide();
-                }, 500
+                }, 4000
             );
             
         }
