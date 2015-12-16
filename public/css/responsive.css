@@ -74,7 +74,7 @@ min-width: 0;
   position:absolute;
 
   top:4px;
-  right: 13px;
+  right: 49px;
 }
 
 .each-img{
@@ -222,8 +222,8 @@ min-width: 0;
 
 .slick-slide img{
   border: 4px solid white;
-  margin-right:10px;
-  height:172 !important;
+  margin-right:45px;
+  height:192 !important;
 }
 
 .slick-track {
@@ -246,7 +246,7 @@ min-width: 0;
 
 .slick-slide {
   float: left;
-  height: 180px;
+  height: 200px;
   min-height: 1px;
   display: none;
 }
@@ -369,7 +369,8 @@ min-width: 0;
 
 .blue, html {
   /* background: #3498db; */
-  background: #37373a;
+ /* background: #37373a; */
+ background: #22313F;
   color: #fff;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
   font-weight: 300;

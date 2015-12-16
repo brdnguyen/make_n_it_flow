@@ -21,7 +21,7 @@ $(document).ready(function() {
             setTimeout(
               function() {
                 $('.pop-up, .pop-up-overlay').hide();
-                }, 4000
+                }, 5000
             );
             
         }
