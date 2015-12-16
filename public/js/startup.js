@@ -42,6 +42,11 @@ $(window).load(function() {
     );
 
 
+    // $('.slick-arrow').hover(function() {
+    //     print
+    //   $('.responsive').slick('slickNext');
+    // });
+
     $('.responsive').slick({
         // dots: true,
         infinite: true,
@@ -50,7 +55,8 @@ $(window).load(function() {
         slidesToScroll: 2,
         swipeToSlide:true,
         variableWidth: true,
-        prevArrow: false
+        prevArrow: false,
+        focusOnSelect: true
         //,
         // responsive: [{
         //     breakpoint: 1024,

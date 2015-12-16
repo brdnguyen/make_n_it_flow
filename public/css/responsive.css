@@ -456,3 +456,12 @@ h2 {
 .slick-next:before {
   font-size: 40;
 }
+
+/* from sklep */
+/*.slick-next.slick-arrow:before{
+  content: url(http://static.parastorage.com/services/skins/2.1212.0/images/wysiwyg/core/themes/base/arrows_white_new3.png);
+  right: -5px;
+  background-position: 100% 50%;
+  opacity: 0.5;
+  transition: opacity 0.4s ease 0s;
+}*/
