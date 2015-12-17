@@ -55,9 +55,8 @@ $(window).load(function() {
         slidesToScroll: 2,
         swipeToSlide:true,
         variableWidth: true,
-        prevArrow: false,
-        focusOnSelect: true
-        //,
+        prevArrow: false
+                //,
         // responsive: [{
         //     breakpoint: 1024,
         //     settings: {
