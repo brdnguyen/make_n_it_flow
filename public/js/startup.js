@@ -21,6 +21,7 @@ $(document).ready(function() {
             setTimeout(
               function() {
                 $('.pop-up, .pop-up-overlay').hide();
+                $('.content').show();
                 }, 5000
             );
             

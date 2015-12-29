@@ -113,9 +113,9 @@ min-width: 0;
 
 /* Slider */
 #circle{
-  left:50%;
-  float:right;
+  text-align: center;
   width:200px;
+  margin:0 auto 16px auto;
 }
 
 .message{
@@ -130,8 +130,8 @@ min-width: 0;
   bottom: 0;
   left:0;
   opacity:0;
-  transition: opacity 0.5s ease-in-out; 
-  background: #fff;
+  transition: opacity 0.2s ease-in-out;
+  background: #37373a;
 }
 
 .pop-up-overlay.visible{
@@ -139,33 +139,43 @@ min-width: 0;
 }
 
 .pop-up {
+  max-height: calc(100% - 100px);
   position: fixed;
-  top: 50%;
-  right: 50%;
-  bottom: 50%;
-  left: 50%;
+	top: 50%;
+	left: 50%;
+	right: auto;
+	bottom: auto;
+  transform: translate(-50%, -50%);
   background-color:  #ffffff;
-  
   overflow: auto;
   transition: top 0.5s ease-in-out, right 0.5s ease-in-out, bottom 0.5s ease-in-out, left 0.5s ease-in-out;
   color: #000;
+  max-width: 650px;
+  padding: 32px 32px 16px 32px;
+  border-radius: 3px;
 }
 
-.pop-up h2, .pop-up h4{
-  padding: 10px;
+.pop-up h2 {
+  padding: 0 0 8px 0;
+  margin: 0;
+}
+
+.pop-up h4 {
+	padding: 0 0 32px 0;
+	margin: 0;
 }
 
 .pop-up.visible {
-  top: 100px;
-  right: 150px;
-  bottom: 100px;
-  left: 150px;  
+ 
 }
 
 .seeding-img{
   margin-bottom: 16px;
-  margin-left: 200px;
   float: left;
+}
+
+.seeding-img:last-child {
+	margin-bottom: 0;
 }
 
 .ui-icon-heart{
@@ -364,13 +374,14 @@ min-width: 0;
 
 .content {
   width: 80%;
-  margin: auto;
+  margin: 32px auto;
+  display: none;
 }
 
 .blue, html {
   /* background: #3498db; */
- /* background: #37373a; */
- background: #22313F;
+  background: #37373a;
+  /* background: #22313F; */
   color: #fff;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
   font-weight: 300;
@@ -395,7 +406,7 @@ h2 {
 
 /* Dots */
 .slick-slider {
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 
 .slick-dots {
