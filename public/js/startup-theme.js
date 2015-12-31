@@ -9,10 +9,10 @@ $(document).ready(function() {
             count = count + 1;
         $(this).addClass('active-img');
 
-
-        var id = $(this).attr('data-theme'); 
-        $(".content-frame").each(function(){
-            if($(this).attr('id') == id) {
+        var id = $(this).attr('data-theme');
+        console.log(id); 
+        $(".dynamic-content-frame").each(function(){
+            if($(this).attr('data-frame') == id) {
                 $(this).show();
             }
         });
