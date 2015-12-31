@@ -9,14 +9,6 @@ $(document).ready(function() {
             count = count + 1;
         $(this).addClass('active-img');
 
-
-        var id = $(this).attr('data-theme'); 
-        $(".content-frame").each(function(){
-            if($(this).attr('id') == id) {
-                $(this).show();
-            }
-        });
-
         if (count == 3) {
             // print 'personalising for XXXXX'
             $('.message').show();
