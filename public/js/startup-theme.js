@@ -48,8 +48,21 @@ $(window).load(function() {
            $(this).append('<div class="fav"></div>');
         }
         $(this).toggleClass('just-clicked');
-    }
-    );
+    });
+    $('.carousel-img').hover(function() {
+        $(this).toggleClass('hover-active');
+        $(this).append($('.hover-tile'));
+        var favourite = Math.floor(Math.random() * 98) + 1;
+        $('.fav-counter').html(favourite);
+    });
+
+    $('.carousel-img').on('mouseover', function(event){
+        $('.hover-tile').show();
+    });
+
+    $('.carousel-img').on('mouseout', function(event){
+        $('.hover-tile').hide();
+    });
 
 
     // $('.slick-arrow').hover(function() {

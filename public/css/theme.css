@@ -248,7 +248,7 @@ min-width: 0;
 
 .slick-slide img{
   border: 4px solid white;
-  margin-right:45px;
+  /*margin-right:45px;*/
   height:192 !important;
 }
 
@@ -275,6 +275,7 @@ min-width: 0;
   height: 200px;
   min-height: 1px;
   display: none;
+  margin-right: 45px;
 }
 .slick-slide img {
   display: block;
@@ -486,6 +487,34 @@ h2 {
 
 .dynamic-content-frame {
   display: none;
+}
+.hover-active {
+  background: rgba(0,0,0,0.8);
+}
+.hover-active img {
+  opacity:0.4;
+}
+.hover-tile {
+  display:none;
+  z-index: 100;
+  text-align: center;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  margin-top: -12px;
+  margin-left: -30px;
+  width: 100%;
+}
+.hover-tile .fav-count {
+  width: 60px;
+  height: 24px;
+  line-height: 24px;
+}
+.hover-tile .fav-count img.tile-icon {
+  width: 24px;
+  height: 24px !important;
+  border: none;
+  opacity:1;
 }
 /* from sklep */
 /*.slick-next.slick-arrow:before{
