@@ -45,13 +45,10 @@ min-width: 0;
 
 .slick-prev {
   content: ">";
-  color: red;
-  font-size: 30px;
+
 }
 .slick-next{
   content: "<"
-  color: red;
-  font-size: 30px;
 }
 
 .carousel-img{
@@ -182,7 +179,7 @@ min-width: 0;
 }
 
 .pop-up.visible {
- 
+
 }
 
 .seeding-img{
@@ -249,8 +246,9 @@ min-width: 0;
 .slick-slide img{
   border: 4px solid white;
   /*margin-right:45px;*/
-  height:192 !important;
+  height:212 !important;
 }
+
 
 .slick-track {
   position: relative;
@@ -272,7 +270,7 @@ min-width: 0;
 
 .slick-slide {
   float: left;
-  height: 200px;
+  height: 220px;
   min-height: 1px;
   display: none;
   margin-right: 45px;
@@ -400,7 +398,7 @@ min-width: 0;
   background: #37373a;
   /* background: #22313F; */
   color: #fff;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
 }
 .blue h3, html h3 {
@@ -481,7 +479,7 @@ h2 {
   opacity: 0.75;
 }
 
-.slick-next:before {
+.slick-next:before, .slick-prev:before {
   font-size: 40;
 }
 
@@ -517,7 +515,6 @@ h2 {
   opacity:1;
 }
 /* from sklep */
-/*.slick-next.slick-arrow:before{
   content: url(http://static.parastorage.com/services/skins/2.1212.0/images/wysiwyg/core/themes/base/arrows_white_new3.png);
   right: -5px;
   background-position: 100% 50%;
