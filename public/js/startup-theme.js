@@ -19,7 +19,7 @@ $(document).ready(function() {
             }
         });
 
-        if (count == 3) {
+        if (count == 1) {
             // print 'personalising for XXXXX'
             $('.message').show();
             $('#circle').circleProgress({
@@ -33,7 +33,7 @@ $(document).ready(function() {
               function() {
                 $('.pop-up, .pop-up-overlay').hide();
                 $('.content').show();
-                }, 5000
+                }, 500
             );
 
         }
@@ -66,7 +66,8 @@ $(window).load(function() {
     $('.carousel-img').hover(function() {
         $(this).toggleClass('hover-active');
         $(this).append($('.hover-tile'));
-        var favourite = Math.floor(Math.random() * 98) + 1;
+        // var favourite = Math.floor(Math.random() * 98) + 1;
+        var favourite = $(this).attr('count_favs');
         $('.fav-counter').html(favourite);
     });
 

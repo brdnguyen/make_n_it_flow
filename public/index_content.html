@@ -130,7 +130,9 @@
               a_d.title = image["title"];
               a_d.target = "_blank";
 
+
               (img_d = document.createElement('div')).className = "carousel-img";
+              img_d.setAttribute('count_favs', image['count_favs'])
               if (counter < 2){
                 (img = document.createElement('img')).setAttribute('src', image["image_url"]);
               }
