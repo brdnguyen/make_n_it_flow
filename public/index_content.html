@@ -140,11 +140,16 @@
                 (img = document.createElement('img')).setAttribute('src', "img/blank.gif");
                 img.setAttribute('data-echo', image['image_url']);
               };
+
+              (imgtitle = document.createElement('p')).className = "artwork-desc";
+              imgtitle.innerHTML = image["title"] + "<br/> <span class='artwork-artist'>by " + image["title"] + "</span>";
+
               // <img src="img/blank.gif" alt="Photo" data-echo="img/photo.jpg">
 
               a_d.appendChild( img );
               img_d.appendChild(a_d);
               d.appendChild(img_d);
+              img_d.appendChild(imgtitle);
             }
             );
             counter = counter + 1;

@@ -45,10 +45,11 @@ min-width: 0;
 
 .slick-prev {
   content: ">";
-
+  margin-top: -40px;
 }
 .slick-next{
-  content: "<"
+  content: "<";
+  margin-top: -40px;
 }
 
 .carousel-img{
@@ -270,7 +271,7 @@ min-width: 0;
 
 .slick-slide {
   float: left;
-  height: 220px;
+  height: 280px;
   min-height: 1px;
   display: none;
   margin-right: 45px;
@@ -483,11 +484,25 @@ h2 {
   font-size: 40;
 }
 
+.artwork-desc {
+  font-size: 14px;
+  color: #FFF;
+  padding: 12px 8px 8px 8px;
+  clear: both;
+}
+.artwork-artist {
+  display: block;
+  font-size:12px;
+  color: #cfcfd3;
+  padding-top: 4px;
+}
+
 .dynamic-content-frame {
   display: none;
 }
 .hover-active {
-  background: rgba(0,0,0,0.8);
+  background: rgba(28,28,30,0.8);
+  border-radius: 0 0 5px 5px;
 }
 .hover-active img {
   opacity:0.4;
@@ -499,7 +514,7 @@ h2 {
   position: absolute;
   top:50%;
   left: 50%;
-  margin-top: -12px;
+  margin-top: -42px;
   margin-left: -30px;
   width: 100%;
 }
