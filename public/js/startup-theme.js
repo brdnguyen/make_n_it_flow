@@ -1,16 +1,18 @@
 $(document).ready(function() {
+
+
     count = 0 ;
     setTimeout(function() {
-        $('.pop-up,.pop-up-overlay').addClass('visible'); 
+        $('.pop-up,.pop-up-overlay').addClass('visible');
     }, 500);
 
     $('.each-img').click(function() {
-        if (!$(this).hasClass('active-img')) 
+        if (!$(this).hasClass('active-img'))
             count = count + 1;
         $(this).addClass('active-img');
 
         var id = $(this).attr('data-theme');
-        console.log(id); 
+        console.log(id);
         $(".dynamic-content-frame").each(function(){
             if($(this).attr('data-frame') == id) {
                 $(this).show();
@@ -33,7 +35,7 @@ $(document).ready(function() {
                 $('.content').show();
                 }, 5000
             );
-            
+
         }
     });
 }
@@ -41,6 +43,18 @@ $(document).ready(function() {
 
 
 $(window).load(function() {
+    // Lazy Loading with Echo library
+    echo.init({
+        offset: 0,
+        offsetTop: -100,
+        throttle: 0,
+        unload: false,
+        // callback: function (element, op) {
+        //   console.log(element, 'has been', op + 'ed')
+        // }
+    });
+    echo.render();
+
     $('.carousel-img').click(function() {
         if ($(this).hasClass('just-clicked')){
             $(':last-child', this).remove();
@@ -74,11 +88,10 @@ $(window).load(function() {
         // dots: true,
         infinite: true,
         speed: 200,
-        slidesToShow: 6,
-        slidesToScroll: 2,
-        swipeToSlide:true,
-        variableWidth: true,
-        prevArrow: false
+        // slidesToShow: 4,
+        slidesToScroll: 4,
+        // swipeToSlide:true,
+        variableWidth: true
                 //,
         // responsive: [{
         //     breakpoint: 1024,
@@ -107,7 +120,7 @@ $(window).load(function() {
         //         slidesToScroll: 2,
         //         dots: true,
         //         infinite: true,
-                
+
         //     }
         // }, {
         //     breakpoint: 480,
@@ -120,7 +133,7 @@ $(window).load(function() {
         //         autoplaySpeed: 2000,
         //     }
         // }]
+    }).on('afterChange', function() {
+        echo.render();
     });
-
-
 });
