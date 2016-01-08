@@ -26,7 +26,10 @@
 
 
     <section id="features" class="blue">
-      <div id = "content" class="content">
+      <div id = "content" class="content"> </div>
+      <div class="load-more-button">
+        <a id = "load-more" href='#'>Load more </a>
+      </div>
 			<div class="hover-tile">
   				<div class="fav-count">
   					<img src="img/icons/heart.svg" class="tile-icon">
@@ -115,7 +118,7 @@
 
     <script type="text/javascript">
 
-        counter = 0
+        counter = 0;
         _.each(Object.keys(content), function(k) {
             /* Set the header*/
             h = document.createElement('h2');
@@ -123,13 +126,17 @@
             document.getElementById("content").appendChild(h);
             d = document.createElement('div');
             d.className = "slider responsive";
-
+            if (counter > 2){
+              // d.style.visibility = "hidden";
+              // h.style.visibility = "hidden";
+              d.classList.add("to-load-more");
+              h.classList.add("to-load-more");
+            };
             f = content[k];
             _.each(f, function(image){
               (a_d = document.createElement('a')).href = image["url"];
               a_d.title = image["title"];
               a_d.target = "_blank";
-
 
               (img_d = document.createElement('div')).className = "carousel-img";
               img_d.setAttribute('count_favs', image['count_favs'])
@@ -150,15 +157,29 @@
               img_d.appendChild(a_d);
               d.appendChild(img_d);
               img_d.appendChild(imgtitle);
-            }
-            );
+
+            });
             counter = counter + 1;
+
             document.getElementById("content").appendChild(d);
-          }
-      );
+          });
+
+          // Load more handler
+          $('.to-load-more').hide();
+
+          $('.load-more-button').click(function (){
+            $('.to-load-more').show();
+            // $('#content').children().each(function(){
+            //   $(this).show();  //css('visibility', 'visible');
+            // });
 
 
+            $('.load-more-button').hide();
+            echo.render();
+
+          });
     </script>
+
 
 
   </body>

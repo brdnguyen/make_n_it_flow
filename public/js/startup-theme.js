@@ -1,10 +1,10 @@
 $(document).ready(function() {
 
-
     count = 0 ;
     setTimeout(function() {
         $('.pop-up,.pop-up-overlay').addClass('visible');
     }, 500);
+
 
     $('.each-img').click(function() {
         if (!$(this).hasClass('active-img'))
@@ -33,6 +33,8 @@ $(document).ready(function() {
               function() {
                 $('.pop-up, .pop-up-overlay').hide();
                 $('.content').show();
+                $('.load-more-button').show();
+
                 }, 500
             );
 
@@ -92,7 +94,10 @@ $(window).load(function() {
         // slidesToShow: 4,
         slidesToScroll: 4,
         // swipeToSlide:true,
-        variableWidth: true
+        variableWidth: true,
+        prevArrow:"<img class='a-left control-c prev slick-prev' style='height:60px' src='css/img/chevron-left.png'>",
+        nextArrow:"<img class='a-right control-c next slick-next' style='height:60px' src='css/img/chevron-right.png'>"
+
                 //,
         // responsive: [{
         //     breakpoint: 1024,
