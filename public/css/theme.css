@@ -90,7 +90,7 @@ min-width: 0;
 
 .carousel-img{
   position: relative;
-  height: 180px;
+  height: 300px;
   float:left;
 }
 
@@ -307,7 +307,7 @@ min-width: 0;
 
 .slick-slide {
   float: left;
-  height: 280px;
+  /*height: 280px;*/
   min-height: 1px;
   display: none;
   margin-right: 45px;
@@ -525,6 +525,8 @@ h2 {
   color: #FFF;
   padding: 12px 8px 8px 8px;
   clear: both;
+  word-wrap:break-word;
+  max-width: 200px;
 }
 .artwork-artist {
   display: block;
