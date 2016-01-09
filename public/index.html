@@ -28,7 +28,7 @@
     <section id="features" class="blue">
       <div id = "content" class="content"> </div>
       <div class="load-more-button">
-        <a id = "load-more" href='#'>Load more </a>
+        <a id = "load-more" href=''>Load more </a>
       </div>
 			<div class="hover-tile">
   				<div class="fav-count">
@@ -168,15 +168,14 @@
           // Load more handler
           $('.to-load-more').hide();
 
-          $('.load-more-button').click(function (){
+          $('.load-more-button').click(function (e){
+            e.preventDefault(); // avoid go to top of the page because it is a # LINK
             $('.to-load-more').show();
             // $('#content').children().each(function(){
             //   $(this).show();  //css('visibility', 'visible');
             // });
-
-
             $('.load-more-button').hide();
-            echo.render();
+            // echo.render();
 
           });
     </script>
