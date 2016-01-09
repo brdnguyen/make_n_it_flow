@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    $('.load-more-button').hide();
 
     count = 0 ;
     setTimeout(function() {
@@ -19,7 +20,7 @@ $(document).ready(function() {
             }
         });
 
-        if (count == 1) {
+        if (count == 3) {
             // print 'personalising for XXXXX'
             $('.message').show();
             $('#circle').circleProgress({
@@ -57,14 +58,17 @@ $(window).load(function() {
     });
     echo.render();
 
-    $('.carousel-img').click(function() {
-        if ($(this).hasClass('just-clicked')){
-            $(':last-child', this).remove();
-        } else {
-           $(this).append('<div class="fav"></div>');
-        }
-        $(this).toggleClass('just-clicked');
-    });
+    // // logic for showing heart when favouriting
+    // $('.carousel-img').click(function() {
+    //     if ($(this).hasClass('just-clicked')){
+    //         $(':last-child', this).remove();
+    //     } else {
+    //        $(this).append('<div class="fav"></div>');
+    //     }
+    //     $(this).toggleClass('just-clicked');
+    // });
+
+    // Logic for showing fav stats when hovering
     $('.carousel-img').hover(function() {
         $(this).toggleClass('hover-active');
         $(this).append($('.hover-tile'));
